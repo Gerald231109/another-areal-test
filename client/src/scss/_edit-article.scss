@@ -1,0 +1,8 @@
+.edit-article__body {
+  height: calc(100vh - 7rem);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+}
