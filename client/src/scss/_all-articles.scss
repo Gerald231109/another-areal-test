@@ -1,0 +1,101 @@
+.all-articles {
+  overflow-y: scroll;
+  direction: rtl;
+  background: linear-gradient(100deg, rgba($color-ternary, .6) 0%,
+          rgba($color-ternary, .5) 40%, rgba($color-ternary, 0) 70%);
+  max-width: 50rem;
+  display: grid;
+  grid-template-rows: repeat(auto-fill, minmax(min-content, 12rem));
+  grid-row-gap: 2rem;
+  padding: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: $color-primary rgba($color-ternary, .6);
+}
+
+.all-articles-card {
+  background-color: $color-primary;
+  height: 11rem;
+  clip-path: polygon(100% 0, 90% 50%, 100% 100%, 0 100%, 0 0);
+  transition: transform .4s;
+  display: grid;
+  grid-template-rows: 1fr 1px 1fr;
+  grid-template-columns: 6rem 1px 38rem;
+  direction: ltr;
+
+  &:hover {
+    transform: translateX(1rem);
+  }
+}
+
+.article-card__title {
+  font-family: Oswald;
+  font-size: 3rem;
+  justify-self: start;
+  color: rgba(#fff, .8);
+  padding-left: 1rem;
+  align-self: center;
+  grid-column: 3/4;
+  cursor: pointer;
+  transition: color .2s;
+
+  &:hover {
+    color: #fff
+  }
+}
+
+.article-card__divider--horizontal {
+  height: 1px;
+  width: 100%;
+  background-color: $color-secondary;
+  grid-column: 1/4;
+  grid-row: 2/3;
+}
+
+.article-card__divider--vertical {
+  background-color: $color-secondary;
+  width: 1px;
+  grid-column: 2/3;
+  grid-row: 1/4;
+}
+
+.article-card__text {
+  font-size: 1.2rem;
+  font-family: Montserrat;
+  color: rgba($color-ternary, .6);
+  justify-self: center;
+  align-self: center;
+  max-width: 80%;
+  grid-column: 3/4;
+  max-height: 4.5rem;
+  overflow: hidden;
+}
+
+.article__delete {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  justify-self: center;
+  align-self: center;
+  color: $color-ternary;
+  font-size: 2rem;
+  transition: color .2s;
+  cursor: pointer;
+
+  &:hover {
+    color: darkred;
+  }
+}
+
+.article__edit {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  justify-self: center;
+  align-self: center;
+  color: $color-ternary;
+  font-size: 2rem;
+  transition: color .2s;
+  cursor: pointer;
+
+  &:hover {
+    color: #fefefe;
+  }
+}

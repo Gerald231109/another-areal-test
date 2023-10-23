@@ -1,0 +1,57 @@
+.create-article {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.create-article__form {
+  height: 80%;
+  width: 80%;
+  background-color: $color-ternary;
+  border-radius: 1rem;
+  outline: 1.5rem solid $color-ternary;
+  border: .5rem dashed $color-primary;
+  display: grid;
+  grid-template-rows: 5rem 1fr 3rem;
+  grid-row-gap: 1rem;
+  padding: 2rem;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.56) 0 22px 70px 4px;
+}
+
+.create-article__title {
+  font-family: Oswald;
+  font-size: 3rem;
+  background-color: rgba(#fefefe, .6);
+  border-radius: .5rem;
+  padding: 1rem;
+  font-weight: 500;
+}
+
+.create-article__text {
+  font-family: Montserrat;
+  background-color: rgba(#fefefe, .6);
+  border-radius: .5rem;
+  position: relative;
+  font-size: 1.8rem;
+  padding: 1rem;
+  resize: none;
+}
+
+.create-article__btn {
+  align-self: end;
+  background-color: $color-primary;
+  justify-self: end;
+  font-size: 2rem;
+  padding: .5rem 4rem;
+  color: $color-ternary;
+  border-radius: .2rem;
+  transition: color .4s;
+  font-family: Montserrat;
+  font-weight: 600;
+
+  &:hover {
+    color: #fff;
+  }
+}
+

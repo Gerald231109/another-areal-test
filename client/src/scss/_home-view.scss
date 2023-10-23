@@ -1,0 +1,6 @@
+.home-view__body {
+  display: grid;
+  grid-template-columns: 48rem 1fr;
+  height: calc(100vh - 7rem);
+  background: linear-gradient(180deg, rgba(37,39,77,1) 0%, rgba(41,101,138,1) 100%);
+}
