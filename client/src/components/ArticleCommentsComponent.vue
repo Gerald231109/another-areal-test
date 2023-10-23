@@ -23,7 +23,7 @@
       </a>
       <div class="comment__top">
         <h4 class="comment__name">{{ comment.title }}</h4>
-        <p class="comment__date">{{ comment.createdAt }}</p>
+        <p class="comment__date">{{ new Date(comment.createdAt).toLocaleString() }}</p>
       </div>
       <p class="comment__text">{{ comment.text }}</p>
       <div class="comment__divider"></div>
